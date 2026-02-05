@@ -1,0 +1,60 @@
+//https://www.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1
+
+/*
+class Node {
+    int data;
+    Node next;
+
+    Node(int d)
+    {
+        data = d;
+        next = null;
+    }
+}*/
+
+//method 1
+class Solution {
+    public Node segregate(Node head) {
+        // code here
+        if(head==null || head.next==null){
+            return head;
+        }
+        Node temp=head;
+        Node temp2=head;
+        int frequency_0=0;
+        int frequency_1=0;
+        int frequency_2=0;
+        
+        while(temp!=null){
+            if(temp.data==0){
+                frequency_0++;
+            }
+            else if(temp.data==1){
+                frequency_1++;
+            }
+            else{
+                frequency_2++;
+            }
+            temp=temp.next;
+        }
+        while(frequency_0!=0 && temp2!=null){
+            temp2.data=0;
+            temp2=temp2.next;
+            frequency_0--;
+        }
+        while(frequency_1!=0 && temp2!=null){
+            temp2.data=1;
+            temp2=temp2.next;
+            frequency_1--;
+        }
+        while(frequency_2!=0 && temp2!=null){
+            temp2.data=2;
+            temp2=temp2.next;
+            frequency_2--;
+        }
+        return head;
+    }
+}
+
+//method 2
+https://www.youtube.com/watch?v=gRII7LhdJWc&list=PLgUwDviBIf0rAuz8tVcM0AymmhTRsfaLU&index=8

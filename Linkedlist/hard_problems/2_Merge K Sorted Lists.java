@@ -39,7 +39,7 @@ class Solution {
     }
 }
 
-Optimized Approach (withou using array, inplace)
+Optimized Approach I (withou using array, inplace)
  /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -86,3 +86,40 @@ class Solution {
         return head;
     }
 } 
+Optimized Approach II (using min heap concept by implementing it using priority Queue) refer the concept on gpt
+import java.util.PriorityQueue;
+
+class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
+        if (lists == null || lists.length == 0) return null;
+
+        // Min Heap with comparator
+        PriorityQueue<ListNode> pq = new PriorityQueue<>(
+            (a, b) -> a.val - b.val
+        );
+
+        // Add all list heads
+        for (ListNode node : lists) {
+            if (node != null) {
+                pq.add(node);
+            }
+        }
+
+        // Dummy node for result
+        ListNode dummy = new ListNode(-1);
+        ListNode temp = dummy;
+
+        // Process heap
+        while (!pq.isEmpty()) {
+            ListNode smallestNode = pq.poll();
+            temp.next = smallestNode;
+            temp = temp.next;
+
+            if (smallestNode.next != null) {
+                pq.add(smallestNode.next);
+            }
+        }
+
+        return dummy.next;
+    }
+}

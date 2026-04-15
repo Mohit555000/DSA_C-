@@ -17,3 +17,6 @@ class Solution {
         return result;
     }
 }
+
+
+//Method 2 (Optimized Approach)

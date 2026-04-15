@@ -1,5 +1,6 @@
 //Method 1 (Brute Force Approach)
 // formed all the subarrays and used min heap to fetch the min element from each of the sub array 
+// It will give TLE
 class Solution {
     public int sumSubarrayMins(int[] arr) {
         int n =arr.length;

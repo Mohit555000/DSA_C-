@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?v=1_5VuquLbXg
+https://leetcode.com/problems/trapping-rain-water/
 //brute force approach
 //TC - O(2n)
 //SC - O(2n)

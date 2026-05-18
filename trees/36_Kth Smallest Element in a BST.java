@@ -1,6 +1,7 @@
 //https://www.youtube.com/watch?v=9TJYWh0adfk&list=PLkjdNRgDmcc0Pom5erUBU4ZayeU9AyRRu&index=45
 //https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
-
+Property Of BST Trees - When we do inorder traversal traversal, we get elemnts in sorted way. (ascending order)
+So we have used this property
 //method 1 brute force approach
 /**
  * Definition for a binary tree node.

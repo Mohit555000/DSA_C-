@@ -1,5 +1,6 @@
 //https://www.geeksforgeeks.org/problems/kth-largest-element-in-bst/1
-
+Property Of BST Trees - When we do inorder traversal traversal, we get elemnts in sorted way. (ascending order)
+So we have used this property
 //brute force approach
 /*
 class Node

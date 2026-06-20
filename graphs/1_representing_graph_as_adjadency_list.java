@@ -1,3 +1,5 @@
+//https://www.youtube.com/watch?v=o9JvO7MGQPo&list=PLpIkg8OmuX-LZB9jYzbbZchk277H5CbdY&index=2
+
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
        Map<Integer,List<Integer>> adj=new HashMap<>();

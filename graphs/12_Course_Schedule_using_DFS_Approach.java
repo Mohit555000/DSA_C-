@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/course-schedule/description/
-// https://www.youtube.com/watch?v=lqjlGGMjSMU&list=PLpIkg8OmuX-LZB9jYzbbZchk277H5CbdY&index=12   ismai khan's algorithm use kiya hai 
+// https://www.youtube.com/watch?v=lqjlGGMjSMU&list=PLpIkg8OmuX-LZB9jYzbbZchk277H5CbdY&index=12   ismai khan's algorithm approach use kiya hai 
 class Solution {
     public boolean DFS(int start,Map<Integer,List<Integer>> adj,boolean[] visited,boolean[] currentRecursion){
         visited[start]=true;

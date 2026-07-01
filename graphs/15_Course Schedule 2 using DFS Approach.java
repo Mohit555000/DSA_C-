@@ -1,6 +1,6 @@
 //https://leetcode.com/problems/course-schedule-ii/
 //https://www.youtube.com/watch?v=yiR95dxinjs&list=PLpIkg8OmuX-LZB9jYzbbZchk277H5CbdY&index=15
-
+// This is the commbination of topological sort using DFS and cycle detection in a directed graph using DFS
 import java.util.*;
 
 class Solution {
